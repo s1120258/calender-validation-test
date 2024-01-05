@@ -116,23 +116,18 @@ h1 {
     padding-left: 1.1rem;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
+/* input[type="date"]::-webkit-calendar-picker-indicator {
     padding-left: 120px;
-}
+} */
 
-.paypal-form-input {
+/* .paypal-form-input {
     min-height: 44px;
-}
+} */
 
 .calender-wrapper {
     display: flex;
     background-color: var(--color-slight-gray);
     border-radius: 30px;
-}
-
-#calender {
-    width: 100%;
-    height: 100%;
 }
 
 #calender {
