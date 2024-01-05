@@ -110,18 +110,24 @@ const validate = dateString => {
     return true
 }
 //
-if(navigator.userAgent.match(/iPhone/i)) {
-    calenderEl.onblur = evt => {
-        if (!validate(evt.target.value)) {
-            evt.target.value = ''
-        }
-        console.log(evt.target.value)
+calenderEl.onblur = evt => {
+    if (!validate(evt.target.value)) {
+        evt.target.value = ''
     }
-} else {
-    calenderEl.onchange = evt => {
-        if (!validate(evt.target.value)) {
-            evt.target.value = ''
-        }
-        console.log(evt.target.value)
-    }
+    console.log(evt.target.value)
 }
+// if(navigator.userAgent.match(/iPhone/i)) {
+//     calenderEl.onblur = evt => {
+//         if (!validate(evt.target.value)) {
+//             evt.target.value = ''
+//         }
+//         console.log(evt.target.value)
+//     }
+// } else {
+//     calenderEl.onchange = evt => {
+//         if (!validate(evt.target.value)) {
+//             evt.target.value = ''
+//         }
+//         console.log(evt.target.value)
+//     }
+// }
