@@ -119,6 +119,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-left: 120px;
 }
 
+#calender {
+    min-height: 18px;
+    width: 100%;
+}
+
 @media screen and ( min-width: 600px ) {
     h1 {
         font-size: 1.5rem;
