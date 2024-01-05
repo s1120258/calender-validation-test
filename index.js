@@ -110,6 +110,7 @@ const validate = dateString => {
     return true
 }
 //
+// document.querySelectorAll("div.calender-wrapper")[0].innerHTML = "a"
 if(navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")) {
     calenderEl.onblur = evt => {
         if (!validate(evt.target.value)) {

@@ -76,7 +76,7 @@ h1 {
     width: 92%;
     border-style: none;
     outline: none;
-    /* padding: 0.7rem 0.5rem; */
+    padding: 0.7rem 0.5rem;
     border-radius: 30px;
 }
 
@@ -106,9 +106,9 @@ h1 {
     padding-left: 0.7rem;
 }
 
-#quantity {
+/* #quantity {
     padding: 0.7rem 0.5rem;
-}
+} */
 
 #quantity, #calender {
     padding-left: 1.1rem;
@@ -118,25 +118,33 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-left: 120px;
 }
 
-input[type="date"]::-webkit-date-and-time-value {
+/* input[type="date"]::-webkit-date-and-time-value {
+    text-align: left;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     padding-right: 200px;
-}
+} */
 
 /* .paypal-form-input {
     min-height: 44px;
 } */
 
-.calender-wrapper {
+/* .calender-wrapper {
     display: flex;
     background-color: var(--color-slight-gray);
     border-radius: 30px;
     padding: 0.7rem 0;
-}
+} */
 
 #calender {
     background-color: var(--color-slight-gray);
+}
+
+input[type="date"] {
+    display: block;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    min-height: 1.2em;
 }
 
 @media screen and ( min-width: 600px ) {
