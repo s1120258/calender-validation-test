@@ -125,10 +125,3 @@ if(navigator.userAgent.match(/iPhone/i)) {
         console.log(evt.target.value)
     }
 }
-
-// const paypalBtn = document.getElementById("paypalBtn")
-// paypalBtn.onclick = evt => {
-//     if (calenderEl.value == 'yyyy-mm-dd') {
-//         alert("Please fill out Date.")
-//     }
-// }
