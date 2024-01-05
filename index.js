@@ -82,6 +82,9 @@ function createEnglishMessage(values) {
     return `${values.slice(0, values.length - 1).join(', ')} and ${values.slice(-1)}`
 }
 const validate = dateString => {
+    if (dateString == '' || dateString == 'yyyy/mm/dd') {
+        return false
+    }
     const selectedDate = new Date(dateString)
     //
     const month = String(selectedDate.getUTCMonth() + 1)
@@ -106,9 +109,26 @@ const validate = dateString => {
     //
     return true
 }
-calenderEl.onchange = evt => {
-    if (!validate(evt.target.value)) {
-        evt.target.value = ''
+//
+if(navigator.userAgent.match(/iPhone/i)) {
+    calenderEl.onblur = evt => {
+        if (!validate(evt.target.value)) {
+            evt.target.value = ''
+        }
+        console.log(evt.target.value)
     }
-    console.log(evt.target.value)
+} else {
+    calenderEl.onchange = evt => {
+        if (!validate(evt.target.value)) {
+            evt.target.value = ''
+        }
+        console.log(evt.target.value)
+    }
 }
+
+// const paypalBtn = document.getElementById("paypalBtn")
+// paypalBtn.onclick = evt => {
+//     if (calenderEl.value == 'yyyy-mm-dd') {
+//         alert("Please fill out Date.")
+//     }
+// }
