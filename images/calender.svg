@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.59 46.34">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #023187;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <g id="Layer_2-2" data-name="Layer 2">
-    <g>
-      <path class="cls-1" d="M14.55,8.13c1.26,0,2.27-1.02,2.27-2.27v-3.58c0-1.26-1.02-2.27-2.27-2.27s-2.27,1.02-2.27,2.27v3.58c0,1.26,1.02,2.27,2.27,2.27Z"/>
-      <path class="cls-1" d="M31.32,8.13c1.26,0,2.27-1.02,2.27-2.27v-3.58c0-1.26-1.02-2.27-2.27-2.27s-2.27,1.02-2.27,2.27v3.58c0,1.26,1.02,2.27,2.27,2.27Z"/>
-      <path class="cls-1" d="M39.2,3.24h-3.61v2.61c0,2.36-1.92,4.27-4.27,4.27s-4.27-1.92-4.27-4.27v-2.61h-8.23v2.61c0,2.36-1.92,4.27-4.27,4.27s-4.27-1.92-4.27-4.27v-2.61h-3.89C2.86,3.24,0,6.1,0,9.63v30.33c0,3.53,2.86,6.39,6.39,6.39h32.81c3.53,0,6.39-2.86,6.39-6.39V9.63c0-3.53-2.86-6.39-6.39-6.39ZM42.48,39.95c0,1.81-1.47,3.28-3.28,3.28H6.39c-1.81,0-3.28-1.47-3.28-3.28V13.67h39.37v26.29Z"/>
-      <rect class="cls-1" x="15.46" y="34.62" width="5.76" height="5.76"/>
-      <rect class="cls-1" x="15.46" y="25.7" width="5.76" height="5.76"/>
-      <rect class="cls-1" x="6.54" y="34.62" width="5.75" height="5.76"/>
-      <rect class="cls-1" x="6.54" y="25.7" width="5.75" height="5.76"/>
-      <rect class="cls-1" x="33.3" y="16.78" width="5.76" height="5.75"/>
-      <rect class="cls-1" x="24.38" y="16.78" width="5.76" height="5.75"/>
-      <rect class="cls-1" x="24.38" y="25.7" width="5.76" height="5.76"/>
-      <rect class="cls-1" x="33.3" y="25.7" width="5.76" height="5.76"/>
-      <rect class="cls-1" x="24.38" y="34.62" width="5.76" height="5.76"/>
-      <rect class="cls-1" x="15.46" y="16.78" width="5.76" height="5.75"/>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2_00000054986177660803516360000016843960771912167584_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45.6 46.3"
+	 style="enable-background:new 0 0 45.6 46.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g id="Layer_2-2">
+	<g>
+		<path class="st0" d="M14.6,8.1c1.3,0,2.3-1,2.3-2.3V2.3c0-1.3-1-2.3-2.3-2.3s-2.3,1-2.3,2.3v3.6C12.3,7.1,13.3,8.1,14.6,8.1z"/>
+		<path class="st0" d="M31.3,8.1c1.3,0,2.3-1,2.3-2.3V2.3c0-1.3-1-2.3-2.3-2.3S29,1,29,2.3v3.6C29,7.1,30.1,8.1,31.3,8.1z"/>
+		<path class="st0" d="M39.2,3.2h-3.6v2.6c0,2.4-1.9,4.3-4.3,4.3S27,8.2,27,5.8V3.2h-8.2v2.6c0,2.4-1.9,4.3-4.3,4.3
+			s-4.3-1.9-4.3-4.3V3.2H6.4C2.9,3.2,0,6.1,0,9.6V40c0,3.5,2.9,6.4,6.4,6.4h32.8c3.5,0,6.4-2.9,6.4-6.4V9.6
+			C45.6,6.1,42.7,3.2,39.2,3.2z M42.5,40c0,1.8-1.5,3.3-3.3,3.3H6.4c-1.8,0-3.3-1.5-3.3-3.3V13.7h39.4V40L42.5,40z"/>
+		<rect x="15.5" y="34.6" class="st0" width="5.8" height="5.8"/>
+		<rect x="15.5" y="25.7" class="st0" width="5.8" height="5.8"/>
+		<rect x="6.5" y="34.6" class="st0" width="5.8" height="5.8"/>
+		<rect x="6.5" y="25.7" class="st0" width="5.8" height="5.8"/>
+		<rect x="33.3" y="16.8" class="st0" width="5.8" height="5.8"/>
+		<rect x="24.4" y="16.8" class="st0" width="5.8" height="5.8"/>
+		<rect x="24.4" y="25.7" class="st0" width="5.8" height="5.8"/>
+		<rect x="33.3" y="25.7" class="st0" width="5.8" height="5.8"/>
+		<rect x="24.4" y="34.6" class="st0" width="5.8" height="5.8"/>
+		<rect x="15.5" y="16.8" class="st0" width="5.8" height="5.8"/>
+	</g>
+</g>
 </svg>
