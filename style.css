@@ -140,7 +140,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .calender-wrapper {
     display: flex;
     align-items: center;
-    min-height: 2.4em;
+    min-height: 2.4rem;
     background-color: var(--color-slight-gray);
     border-radius: 30px;
 }

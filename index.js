@@ -119,7 +119,7 @@ if(navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad"
         console.log(evt.target.value)
     }
 } else {
-    calenderEl.onchange = evt => {
+    calenderEl.onblur = evt => {
         if (!validate(evt.target.value)) {
             evt.target.value = ''
         }
