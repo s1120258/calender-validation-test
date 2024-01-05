@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender Validation Test</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="paypal-form-wrapper">
+        <div class="paypal-form">
+            <h1>
+                <img class="booknow-icon" src="images/booknow.svg" alt="BOOK NOW">
+                <span>BOOK NOW</span>
+            </h1>
+            <div class="paypal-form-field paypal-dropdown-wrapper">
+                <div class="paypal-form-label">
+                    <img class="input-field-icon" src="images/tour_flag.svg" alt="Tour Flag">
+                    <label>Tour: </label>
+                </div>
+                <div class="paypal-form-input">
+                    <input name="item_name" type="hidden" value="Tours" />
+                    <select class="dropdown tour-name" name="item_name" id="tourName" >
+                        <option value="Park Classic Tour">Park Classic Tour (Age 13 and up) ¥5,000 JPY</option>
+                        <option value="Park Classic Tour (Children)">Park Classic Tour (Age 6 to 12) ¥1,000 JPY</option>
+                    </select>
+                </div>    
+            </div>
+            <div class="paypal-form-field-input-wrapper">
+                <div class="paypal-form-field number-of-people-field">
+                    <div class="paypal-form-label">
+                        <img class="input-field-icon" src="images/people.svg" alt="People">
+                        <label>Number of People: </label>
+                    </div>
+                    <div class="paypal-form-input">
+                        <input class="number-of-people" type="number" name="quantity" id="quantity" value="1" min="1" required />    
+                    </div>
+                </div>
+                <div class="paypal-form-field date-pick-field">
+                    <div class="paypal-form-label">
+                        <img class="input-field-icon" src="images/calender.svg" alt="Calender">
+                        <label>Date: </label>
+                    </div>
+                    <div class="paypal-form-input">
+                        <input name="on2" type="hidden" value="Tour Date" />
+                        <input class="date-pick" maxlength="200" name="os2" type="date" id="calender" placeholder="Tour Date" required />
+                    </div>
+                </div>    
+            </div>
+            <div class="paypal-form-field paypal-button-field">
+                <input type="image" src="images/paypal_logo.svg" name="submit">
+            </div>
+        </div>    
+    </div>
+</body>
+</html>

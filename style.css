@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --color-background: #023187;
+    --color-button: #FFC53A;
+    --color-button-hover: #FFD180;
+    --color-button-active: #E8A41A;
+    --color-light-gray: #9E9E9E;
+    --color-dark-gray: #595959;
+    --shadow-normal: 3px 3px 8px var(--color-dark-gray);
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin: 0.4rem 0;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.booknow-icon {
+    width: 1.2rem;
+}
+
+.paypal-form-wrapper {
+    background-color: var(--color-background);
+    border-radius: 24px;
+    box-shadow: var(--shadow-normal);
+    padding: 1rem;
+}
+
+.paypal-form-field {
+    padding: 0.5rem 0;
+}
+
+.paypal-form-label {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.input-field-icon {
+    width: 1rem;
+}
+
+.paypal-form-input {
+    margin-top: 0.2rem;
+}
+
+.paypal-form-input select {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    border-style: none;
+    outline: none;
+    padding: 0.7rem 0.5rem;
+    border-radius: 30px;
+    /* background-position: 5% center;
+    background-color: white;
+    background-size: 1rem; */
+}
+
+.paypal-form-input input {
+    font-family: "Montserrat", sans-serif;
+    width: 92%;
+    border-style: none;
+    outline: none;
+    padding: 0.7rem 0.5rem;
+    border-radius: 30px;
+    /* background-position: 5% center;
+    background-color: white;
+    background-size: 1rem; */
+}
+
+.paypal-button-field {
+    background-color: var(--color-button);
+    border-radius: 30px;
+    margin: 2.4rem 0;
+}
+
+.paypal-button-field:hover {
+    background-color: var(--color-button-hover);
+}
+
+.paypal-button-field:active {
+    background-color: var(--color-button-active);
+}
+
+.paypal-button-field input {
+    width: 80%;
+    max-width: 320px;
+    display: block;
+    padding: 0.2rem;
+    margin: 0 auto;
+}
+
+#tourName {
+    padding-left: 0.7rem;
+}
+
+#quantity, #calender {
+    padding-left: 1.1rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    padding-left: 120px;
+}
+
+@media screen and ( min-width: 600px ) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    select, input {
+        font-size: 1rem;
+    }
+
+    .booknow-icon {
+        width: 1.3rem;
+    }
+
+    .input-field-icon {
+        width: 1.1rem;
+    }
+
+    .paypal-form-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .paypal-form {
+        max-width: 640px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .paypal-form-field-input-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .paypal-form-input input {
+        width: 91%;
+    }
+}
