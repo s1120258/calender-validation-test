@@ -82,7 +82,7 @@ function createEnglishMessage(values) {
     return `${values.slice(0, values.length - 1).join(', ')} and ${values.slice(-1)}`
 }
 const validate = dateString => {
-    if (dateString == '' || dateString == 'yyyy/mm/dd') {
+    if (dateString == '' || dateString == ' ') {
         return false
     }
     const selectedDate = new Date(dateString)
@@ -104,7 +104,7 @@ const validate = dateString => {
             errorMessage = `${unavailableDayJapaneseNames.join('、')}曜日はこのツアーをご利用いただけません。`
         }
         alert(errorMessage)
-        return false    
+        return false
     }
     //
     return true
@@ -113,7 +113,7 @@ const validate = dateString => {
 if(navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")) {
     calenderEl.onblur = evt => {
         if (!validate(evt.target.value)) {
-            evt.target.value = ''
+            evt.target.value = ' '
         }
         console.log(evt.target.value)
     }
