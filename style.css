@@ -5,6 +5,7 @@
     --color-button: #FFC53A;
     --color-button-hover: #FFD180;
     --color-button-active: #E8A41A;
+    --color-slight-gray: #e1e1e1;
     --color-light-gray: #9E9E9E;
     --color-dark-gray: #595959;
     --shadow-normal: 3px 3px 8px var(--color-dark-gray);
@@ -112,7 +113,6 @@ h1 {
 }
 
 #quantity, #calender {
-    background-color: white;
     padding-left: 1.1rem;
 }
 
@@ -122,9 +122,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .calender-wrapper {
     display: flex;
-    background-color: white;
+    background-color: var(--color-slight-gray);
     border-radius: 30px;
     min-height: 44px;
+}
+
+#calender {
+    background-color: var(--color-slight-gray);
 }
 
 @media screen and ( min-width: 600px ) {
