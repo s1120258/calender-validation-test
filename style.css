@@ -112,6 +112,7 @@ h1 {
 }
 
 #quantity, #calender {
+    background-color: white;
     padding-left: 1.1rem;
 }
 
@@ -123,7 +124,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     background-color: white;
     border-radius: 30px;
-    min-height: 40px;
+    min-height: 44px;
 }
 
 @media screen and ( min-width: 600px ) {
