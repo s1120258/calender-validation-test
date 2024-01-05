@@ -69,9 +69,6 @@ h1 {
     outline: none;
     padding: 0.7rem 0.5rem;
     border-radius: 30px;
-    /* background-position: 5% center;
-    background-color: white;
-    background-size: 1rem; */
 }
 
 .paypal-form-input input {
@@ -79,11 +76,8 @@ h1 {
     width: 92%;
     border-style: none;
     outline: none;
-    padding: 0.7rem 0.5rem;
+    /* padding: 0.7rem 0.5rem; */
     border-radius: 30px;
-    /* background-position: 5% center;
-    background-color: white;
-    background-size: 1rem; */
 }
 
 .paypal-button-field {
@@ -112,13 +106,21 @@ h1 {
     padding-left: 0.7rem;
 }
 
+#quantity {
+    padding: 0.7rem 0.5rem;
+}
+
 #quantity, #calender {
     padding-left: 1.1rem;
 }
 
-/* input[type="date"]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
     padding-left: 120px;
-} */
+}
+
+input[type="date"]::-webkit-date-and-time-value {
+    padding: 5rem;
+}
 
 /* .paypal-form-input {
     min-height: 44px;
@@ -128,6 +130,7 @@ h1 {
     display: flex;
     background-color: var(--color-slight-gray);
     border-radius: 30px;
+    padding: 0.7rem 0;
 }
 
 #calender {
