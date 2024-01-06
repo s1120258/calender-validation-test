@@ -106,8 +106,6 @@ const validate = dateString => {
         return false
     }
     //
-    console.log(calenderEl.min, dateString)
-    console.log(selectedDate, selectedDate.getUTCFullYear(), selectedDate.getUTCMonth() + 1, selectedDate.getUTCDate())
     const day = selectedDate.getUTCDay()
     if (unavailableDayCodes.includes(day) && dayNamesMap.get(day)) {
         let errorMessage = `${createEnglishMessage(unavailableDayNames)} are not available for this tour.`
