@@ -47,8 +47,8 @@ const unavailableMonthNames = getNamesOfMonths(unavailableMonths)
 const unavailableDayNames = ["Sunday", "Tuesday", "Thursday" , "Saturday"]
 const unavailableDayCodes = getCodeOfDays(unavailableDayNames)
 const unavailableDayJapaneseNames = getJapaneseNamesOfDays(unavailableDayNames)
+const availableBookDayDelay = 3
 const language = ""
-// const language = "Japanese"
 //
 const calenderEl = document.getElementById("calender")
 //
@@ -58,7 +58,6 @@ function convertNumberToTwoDigitsString(number) {
 function calcMinAvailableDay() {
     const currentDate = new Date()
     //
-    const availableBookDayDelay = 3
     const offsetUTCtoJST = 9// [hour]
     const offsetUTCtoLocalTimeZone = currentDate.getTimezoneOffset()// [minutes]
     const factorMinutesToMillisecond = 60 * 1000
@@ -87,6 +86,16 @@ const validate = dateString => {
     }
     const selectedDate = new Date(dateString)
     //
+    const minAvailableDate = new Date(calenderEl.min)
+    if (selectedDate.getTime() < minAvailableDate.getTime()) {
+        let errorMessage = `Please reserve ${availableBookDayDelay} days in advance of the tour date.`
+        if (language == "Japanese") {
+            errorMessage = `ツアー日の${availableBookDayDelay}日前までにご予約ください。`
+        }
+        alert(errorMessage)
+        return false
+    }
+    //
     const month = String(selectedDate.getUTCMonth() + 1)
     if (unavailableMonths.includes(month) && monthNamesMap.get(month)) {
         let errorMessage = `${createEnglishMessage(unavailableMonthNames)} are not available for this tour.`
@@ -97,6 +106,8 @@ const validate = dateString => {
         return false
     }
     //
+    console.log(calenderEl.min, dateString)
+    console.log(selectedDate, selectedDate.getUTCFullYear(), selectedDate.getUTCMonth() + 1, selectedDate.getUTCDate())
     const day = selectedDate.getUTCDay()
     if (unavailableDayCodes.includes(day) && dayNamesMap.get(day)) {
         let errorMessage = `${createEnglishMessage(unavailableDayNames)} are not available for this tour.`
@@ -110,8 +121,8 @@ const validate = dateString => {
     return true
 }
 //
-// document.querySelectorAll("div.calender-wrapper")[0].innerHTML = "a"
-if(navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")) {
+if (navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad") || navigator.userAgent.includes("iPod") 
+|| navigator.userAgent.includes("Mac") || navigator.userAgent.includes("Safari")) {
     calenderEl.onblur = evt => {
         if (!validate(evt.target.value)) {
             evt.target.value = ''
@@ -119,7 +130,7 @@ if(navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad"
         console.log(evt.target.value)
     }
 } else {
-    calenderEl.onblur = evt => {
+    calenderEl.onchange = evt => {
         if (!validate(evt.target.value)) {
             evt.target.value = ''
         }
