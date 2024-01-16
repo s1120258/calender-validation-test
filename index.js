@@ -144,3 +144,6 @@ quantityEl.oninvalid = evt => {
 quantityEl.onchange = evt => {
     console.log("onchange")
 }
+quantityEl.keypress = evt => {
+    console.log("keypress")
+}
