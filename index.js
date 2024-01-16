@@ -135,3 +135,12 @@ if (navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad
         console.log(evt.target.value)
     }
 }
+
+const quantityEl = document.getElementById("quantity")
+console.log("quantity event test:")
+quantityEl.oninvalid = evt => {
+    console.log("oninvalid")
+}
+quantityEl.onchange = evt => {
+    console.log("onchange")
+}
