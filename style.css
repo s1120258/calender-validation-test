@@ -104,6 +104,13 @@ h1 {
 
 #tourName {
     padding-left: 0.7rem;
+    background-image: url("/images/down_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 12px;
+    background-origin: border-box;
+    padding-right: 1.2rem;
+    margin-right: 0.5rem;
 }
 
 /* #quantity {
